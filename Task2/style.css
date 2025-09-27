@@ -1,0 +1,127 @@
+/* General Body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #121212;
+  color: #ffffff;
+  margin: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Light theme */
+body.light-theme {
+  background: #f5f5f5;
+  color: #000;
+}
+
+.stopwatch-container {
+  background: #1e1e1e;
+  padding: 40px 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  max-width: 400px;
+  width: 90%;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.light-theme .stopwatch-container {
+  background: #ffffff;
+  color: #000;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #00ffcc;
+}
+
+body.light-theme h1 {
+  color: #007bff;
+}
+
+.intro {
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 30px;
+}
+
+body.light-theme .intro {
+  color: #555;
+}
+
+/* Stopwatch Display */
+#display {
+  font-size: 50px;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #00ffcc;
+  transition: color 0.3s;
+}
+
+body.light-theme #display {
+  color: #007bff;
+}
+
+/* Glow animation */
+.running {
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #00ffcc; }
+  to { text-shadow: 0 0 20px #00ffcc; }
+}
+
+/* Buttons */
+.buttons button {
+  margin: 5px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#start { background-color: #00ffcc; color: #000; }
+#pause { background-color: #ff6b6b; color: #fff; }
+#reset { background-color: #ffa500; color: #000; }
+#lap { background-color: #007bff; color: #fff; }
+#theme-toggle { background-color: #888; color: #fff; }
+
+.buttons button:hover {
+  opacity: 0.8;
+}
+
+/* Lap Times */
+#laps {
+  margin-top: 15px;
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  text-align: left;
+  color: #cccccc;
+}
+
+body.light-theme #laps {
+  color: #333;
+}
+
+#laps li {
+  padding: 5px 0;
+  border-bottom: 1px solid #333;
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #777;
+}
+
