@@ -27,10 +27,10 @@ A modern, responsive stopwatch with **dark/light mode**, **lap tracking**, and *
 
 ## 📂 Project Structure  
 
-professional-stopwatch/
-│── index.html        # Main HTML file
-│── style.css         # Styles (themes, animations)
-│── script.js         # Stopwatch logic & lap tracking
-│── assets/           # Optional: icons, images
-│── README.md         # Documentation
-ub badges** (stars, forks, license, live demo) at the top so your repo looks even more professional and eye‑catching?
+**professional-stopwatch/**
+
+- │── index.html        # Main HTML file
+- │── style.css         # Styles (themes, animations)
+- │── script.js         # Stopwatch logic & lap tracking
+- │── assets/           # Optional: icons, images
+- │── README.md         # Documentation
